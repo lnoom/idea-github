@@ -1,0 +1,14 @@
+#.配置相关信息
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/mybatis01
+        username: root
+        password: root
+
+mybatis:
+    mapper-locations: classpath:mapper/*Mapper.xml # mapper映射文件路径
+    type-aliases-package: com.yu.pojo # 配置哪个包下的类有默认的别名
+
+server:
+    port: 8081
